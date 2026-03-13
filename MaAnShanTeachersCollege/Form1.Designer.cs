@@ -31,10 +31,8 @@
             this.tlPanelContainer = new System.Windows.Forms.TableLayoutPanel();
             this.tlPanelContent = new System.Windows.Forms.TableLayoutPanel();
             this.flPanelMenu = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
             this.tlPanelContainer.SuspendLayout();
             this.tlPanelContent.SuspendLayout();
-            this.flPanelMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // tlPanelContainer
@@ -72,21 +70,11 @@
             // flPanelMenu
             // 
             this.flPanelMenu.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.flPanelMenu.Controls.Add(this.button1);
             this.flPanelMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flPanelMenu.Location = new System.Drawing.Point(3, 3);
             this.flPanelMenu.Name = "flPanelMenu";
             this.flPanelMenu.Size = new System.Drawing.Size(234, 405);
             this.flPanelMenu.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(231, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -98,7 +86,6 @@
             this.Text = "Form1";
             this.tlPanelContainer.ResumeLayout(false);
             this.tlPanelContent.ResumeLayout(false);
-            this.flPanelMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -108,7 +95,6 @@
         private System.Windows.Forms.TableLayoutPanel tlPanelContainer;
         private System.Windows.Forms.TableLayoutPanel tlPanelContent;
         private System.Windows.Forms.FlowLayoutPanel flPanelMenu;
-        private System.Windows.Forms.Button button1;
     }
 }
 
