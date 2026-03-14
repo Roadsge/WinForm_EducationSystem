@@ -31,6 +31,7 @@
             this.tlPanelContainer = new System.Windows.Forms.TableLayoutPanel();
             this.tlPanelContent = new System.Windows.Forms.TableLayoutPanel();
             this.flPanelMenu = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tlPanelContainer.SuspendLayout();
             this.tlPanelContent.SuspendLayout();
             this.SuspendLayout();
@@ -41,6 +42,7 @@
             this.tlPanelContainer.ColumnCount = 1;
             this.tlPanelContainer.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlPanelContainer.Controls.Add(this.tlPanelContent, 0, 1);
+            this.tlPanelContainer.Controls.Add(this.panel1, 0, 0);
             this.tlPanelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlPanelContainer.Location = new System.Drawing.Point(0, 0);
             this.tlPanelContainer.Margin = new System.Windows.Forms.Padding(0);
@@ -60,11 +62,12 @@
             this.tlPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlPanelContent.Controls.Add(this.flPanelMenu, 0, 0);
             this.tlPanelContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlPanelContent.Location = new System.Drawing.Point(3, 83);
+            this.tlPanelContent.Location = new System.Drawing.Point(0, 80);
+            this.tlPanelContent.Margin = new System.Windows.Forms.Padding(0);
             this.tlPanelContent.Name = "tlPanelContent";
             this.tlPanelContent.RowCount = 1;
             this.tlPanelContent.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlPanelContent.Size = new System.Drawing.Size(1061, 411);
+            this.tlPanelContent.Size = new System.Drawing.Size(1067, 417);
             this.tlPanelContent.TabIndex = 0;
             // 
             // flPanelMenu
@@ -73,13 +76,24 @@
             this.flPanelMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flPanelMenu.Location = new System.Drawing.Point(3, 3);
             this.flPanelMenu.Name = "flPanelMenu";
-            this.flPanelMenu.Size = new System.Drawing.Size(234, 405);
+            this.flPanelMenu.Size = new System.Drawing.Size(234, 411);
             this.flPanelMenu.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1067, 80);
+            this.panel1.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1067, 547);
             this.Controls.Add(this.tlPanelContainer);
             this.Name = "Form1";
@@ -95,6 +109,7 @@
         private System.Windows.Forms.TableLayoutPanel tlPanelContainer;
         private System.Windows.Forms.TableLayoutPanel tlPanelContent;
         private System.Windows.Forms.FlowLayoutPanel flPanelMenu;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

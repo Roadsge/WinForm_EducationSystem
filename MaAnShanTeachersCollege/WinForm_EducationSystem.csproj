@@ -79,5 +79,33 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\about.png" />
+    <Content Include="Images\circle.png" />
+    <Content Include="Images\collapse.png" />
+    <Content Include="Images\course.png" />
+    <Content Include="Images\delete.png" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\expand.png" />
+    <Content Include="Images\export-excel.png" />
+    <Content Include="Images\first.png" />
+    <Content Include="Images\grade.png" />
+    <Content Include="Images\home-background.jpg" />
+    <Content Include="Images\home.png" />
+    <Content Include="Images\import-excel.png" />
+    <Content Include="Images\last.png" />
+    <Content Include="Images\LogoMain.png" />
+    <Content Include="Images\LogoSecondary.png" />
+    <Content Include="Images\menu.png" />
+    <Content Include="Images\pagedown.png" />
+    <Content Include="Images\pageup.png" />
+    <Content Include="Images\permissions.png" />
+    <Content Include="Images\personnel.png" />
+    <Content Include="Images\plus.png" />
+    <Content Include="Images\role.png" />
+    <Content Include="Images\save.png" />
+    <Content Include="Images\selection.png" />
+    <Content Include="Images\setting.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
