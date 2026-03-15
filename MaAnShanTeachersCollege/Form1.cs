@@ -15,6 +15,7 @@ namespace MaAnShanTeachersCollege
         public Form1()
         {
             InitializeComponent();
+            
         }
     }
 }
