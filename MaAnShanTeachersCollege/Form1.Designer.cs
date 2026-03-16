@@ -32,13 +32,19 @@
             this.tlPanelContent = new System.Windows.Forms.TableLayoutPanel();
             this.flPanelMenu = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.picLogoMain = new System.Windows.Forms.PictureBox();
+            this.panelContent = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.picLogoSecondary = new System.Windows.Forms.PictureBox();
+            this.picLogoMain = new System.Windows.Forms.PictureBox();
+            this.menuUC1 = new MaAnShanTeachersCollege.UserControls.MenuUC();
             this.tlPanelContainer.SuspendLayout();
             this.tlPanelContent.SuspendLayout();
+            this.flPanelMenu.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogoMain)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoSecondary)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoMain)).BeginInit();
             this.SuspendLayout();
             // 
             // tlPanelContainer
@@ -61,11 +67,12 @@
             // 
             // tlPanelContent
             // 
-            this.tlPanelContent.BackColor = System.Drawing.SystemColors.Control;
+            this.tlPanelContent.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tlPanelContent.ColumnCount = 2;
             this.tlPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 240F));
             this.tlPanelContent.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlPanelContent.Controls.Add(this.flPanelMenu, 0, 0);
+            this.tlPanelContent.Controls.Add(this.panelContent, 1, 0);
             this.tlPanelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlPanelContent.Location = new System.Drawing.Point(0, 80);
             this.tlPanelContent.Margin = new System.Windows.Forms.Padding(0);
@@ -77,11 +84,14 @@
             // 
             // flPanelMenu
             // 
-            this.flPanelMenu.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.flPanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.flPanelMenu.Controls.Add(this.panel2);
+            this.flPanelMenu.Controls.Add(this.menuUC1);
             this.flPanelMenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flPanelMenu.Location = new System.Drawing.Point(3, 3);
+            this.flPanelMenu.Location = new System.Drawing.Point(0, 0);
+            this.flPanelMenu.Margin = new System.Windows.Forms.Padding(0);
             this.flPanelMenu.Name = "flPanelMenu";
-            this.flPanelMenu.Size = new System.Drawing.Size(234, 585);
+            this.flPanelMenu.Size = new System.Drawing.Size(240, 591);
             this.flPanelMenu.TabIndex = 0;
             // 
             // panel1
@@ -96,15 +106,41 @@
             this.panel1.Size = new System.Drawing.Size(1348, 80);
             this.panel1.TabIndex = 1;
             // 
-            // picLogoMain
+            // panelContent
             // 
-            this.picLogoMain.Image = global::MaAnShanTeachersCollege.Properties.Resources.LogoMain;
-            this.picLogoMain.Location = new System.Drawing.Point(3, 3);
-            this.picLogoMain.Name = "picLogoMain";
-            this.picLogoMain.Size = new System.Drawing.Size(555, 71);
-            this.picLogoMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLogoMain.TabIndex = 0;
-            this.picLogoMain.TabStop = false;
+            this.panelContent.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContent.Location = new System.Drawing.Point(240, 0);
+            this.panelContent.Margin = new System.Windows.Forms.Padding(0);
+            this.panelContent.Name = "panelContent";
+            this.panelContent.Size = new System.Drawing.Size(1108, 591);
+            this.panelContent.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(240, 50);
+            this.panel2.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Window;
+            this.button1.Image = global::MaAnShanTeachersCollege.Properties.Resources.menu;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(-13, -15);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(277, 75);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Menu";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // picLogoSecondary
             // 
@@ -115,6 +151,25 @@
             this.picLogoSecondary.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogoSecondary.TabIndex = 1;
             this.picLogoSecondary.TabStop = false;
+            // 
+            // picLogoMain
+            // 
+            this.picLogoMain.Image = global::MaAnShanTeachersCollege.Properties.Resources.LogoMain;
+            this.picLogoMain.Location = new System.Drawing.Point(3, 3);
+            this.picLogoMain.Name = "picLogoMain";
+            this.picLogoMain.Size = new System.Drawing.Size(555, 71);
+            this.picLogoMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogoMain.TabIndex = 0;
+            this.picLogoMain.TabStop = false;
+            // 
+            // menuUC1
+            // 
+            this.menuUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.menuUC1.Location = new System.Drawing.Point(0, 50);
+            this.menuUC1.Margin = new System.Windows.Forms.Padding(0);
+            this.menuUC1.Name = "menuUC1";
+            this.menuUC1.Size = new System.Drawing.Size(240, 50);
+            this.menuUC1.TabIndex = 1;
             // 
             // Form1
             // 
@@ -127,9 +182,11 @@
             this.Text = "Form1";
             this.tlPanelContainer.ResumeLayout(false);
             this.tlPanelContent.ResumeLayout(false);
+            this.flPanelMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picLogoMain)).EndInit();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogoSecondary)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoMain)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -142,6 +199,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox picLogoMain;
         private System.Windows.Forms.PictureBox picLogoSecondary;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panelContent;
+        private System.Windows.Forms.Panel panel2;
+        private UserControls.MenuUC menuUC1;
     }
 }
 
