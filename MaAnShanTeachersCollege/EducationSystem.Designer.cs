@@ -1,6 +1,6 @@
 ﻿namespace MaAnShanTeachersCollege
 {
-    partial class Form1
+    partial class EducationSystem
     {
         /// <summary>
         /// Required designer variable.
@@ -31,18 +31,21 @@
             this.tlPanelContainer = new System.Windows.Forms.TableLayoutPanel();
             this.tlPanelContent = new System.Windows.Forms.TableLayoutPanel();
             this.flPanelMenu = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panelContent = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.menuUC1 = new MaAnShanTeachersCollege.UserControls.MenuUC();
+            this.menuUC2 = new MaAnShanTeachersCollege.UserControls.MenuUC();
+            this.menuUC3 = new MaAnShanTeachersCollege.UserControls.MenuUC();
+            this.menuUC4 = new MaAnShanTeachersCollege.UserControls.MenuUC();
+            this.panelContent = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.picLogoSecondary = new System.Windows.Forms.PictureBox();
             this.picLogoMain = new System.Windows.Forms.PictureBox();
-            this.menuUC1 = new MaAnShanTeachersCollege.UserControls.MenuUC();
             this.tlPanelContainer.SuspendLayout();
             this.tlPanelContent.SuspendLayout();
             this.flPanelMenu.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoSecondary)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoMain)).BeginInit();
             this.SuspendLayout();
@@ -87,34 +90,15 @@
             this.flPanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.flPanelMenu.Controls.Add(this.panel2);
             this.flPanelMenu.Controls.Add(this.menuUC1);
+            this.flPanelMenu.Controls.Add(this.menuUC2);
+            this.flPanelMenu.Controls.Add(this.menuUC3);
+            this.flPanelMenu.Controls.Add(this.menuUC4);
             this.flPanelMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flPanelMenu.Location = new System.Drawing.Point(0, 0);
             this.flPanelMenu.Margin = new System.Windows.Forms.Padding(0);
             this.flPanelMenu.Name = "flPanelMenu";
             this.flPanelMenu.Size = new System.Drawing.Size(240, 591);
             this.flPanelMenu.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel1.Controls.Add(this.picLogoSecondary);
-            this.panel1.Controls.Add(this.picLogoMain);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1348, 80);
-            this.panel1.TabIndex = 1;
-            // 
-            // panelContent
-            // 
-            this.panelContent.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContent.Location = new System.Drawing.Point(240, 0);
-            this.panelContent.Margin = new System.Windows.Forms.Padding(0);
-            this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(1108, 591);
-            this.panelContent.TabIndex = 1;
             // 
             // panel2
             // 
@@ -142,6 +126,70 @@
             this.button1.Text = "Menu";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // menuUC1
+            // 
+            this.menuUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.menuUC1.Location = new System.Drawing.Point(0, 50);
+            this.menuUC1.Margin = new System.Windows.Forms.Padding(0);
+            this.menuUC1.MenuText = "首页";
+            this.menuUC1.Name = "menuUC1";
+            this.menuUC1.Size = new System.Drawing.Size(240, 50);
+            this.menuUC1.TabIndex = 1;
+            this.menuUC1.LabelClick += new System.EventHandler(this.menuUC1_LabelClick);
+            // 
+            // menuUC2
+            // 
+            this.menuUC2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.menuUC2.Location = new System.Drawing.Point(0, 100);
+            this.menuUC2.Margin = new System.Windows.Forms.Padding(0);
+            this.menuUC2.MenuText = "设置";
+            this.menuUC2.Name = "menuUC2";
+            this.menuUC2.Size = new System.Drawing.Size(240, 50);
+            this.menuUC2.TabIndex = 2;
+            this.menuUC2.LabelClick += new System.EventHandler(this.menuUC2_LabelClick);
+            // 
+            // menuUC3
+            // 
+            this.menuUC3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.menuUC3.Location = new System.Drawing.Point(0, 150);
+            this.menuUC3.Margin = new System.Windows.Forms.Padding(0);
+            this.menuUC3.MenuText = "权限";
+            this.menuUC3.Name = "menuUC3";
+            this.menuUC3.Size = new System.Drawing.Size(240, 50);
+            this.menuUC3.TabIndex = 3;
+            // 
+            // menuUC4
+            // 
+            this.menuUC4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.menuUC4.Location = new System.Drawing.Point(0, 200);
+            this.menuUC4.Margin = new System.Windows.Forms.Padding(0);
+            this.menuUC4.MenuText = "你好";
+            this.menuUC4.Name = "menuUC4";
+            this.menuUC4.Size = new System.Drawing.Size(240, 50);
+            this.menuUC4.TabIndex = 4;
+            // 
+            // panelContent
+            // 
+            this.panelContent.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContent.Location = new System.Drawing.Point(240, 0);
+            this.panelContent.Margin = new System.Windows.Forms.Padding(0);
+            this.panelContent.Name = "panelContent";
+            this.panelContent.Size = new System.Drawing.Size(1108, 591);
+            this.panelContent.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.picLogoSecondary);
+            this.panel1.Controls.Add(this.picLogoMain);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1348, 80);
+            this.panel1.TabIndex = 1;
+            // 
             // picLogoSecondary
             // 
             this.picLogoSecondary.Image = global::MaAnShanTeachersCollege.Properties.Resources.LogoSecondary;
@@ -162,29 +210,20 @@
             this.picLogoMain.TabIndex = 0;
             this.picLogoMain.TabStop = false;
             // 
-            // menuUC1
-            // 
-            this.menuUC1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.menuUC1.Location = new System.Drawing.Point(0, 50);
-            this.menuUC1.Margin = new System.Windows.Forms.Padding(0);
-            this.menuUC1.Name = "menuUC1";
-            this.menuUC1.Size = new System.Drawing.Size(240, 50);
-            this.menuUC1.TabIndex = 1;
-            // 
-            // Form1
+            // EducationSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1348, 721);
             this.Controls.Add(this.tlPanelContainer);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "EducationSystem";
+            this.Text = "WinForm_EducationSystem";
             this.tlPanelContainer.ResumeLayout(false);
             this.tlPanelContent.ResumeLayout(false);
             this.flPanelMenu.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogoSecondary)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoMain)).EndInit();
             this.ResumeLayout(false);
@@ -203,6 +242,9 @@
         private System.Windows.Forms.Panel panelContent;
         private System.Windows.Forms.Panel panel2;
         private UserControls.MenuUC menuUC1;
+        private UserControls.MenuUC menuUC2;
+        private UserControls.MenuUC menuUC3;
+        private UserControls.MenuUC menuUC4;
     }
 }
 

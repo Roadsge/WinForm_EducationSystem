@@ -8,14 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MaAnShanTeachersCollege
+namespace MaAnShanTeachersCollege.Pages
 {
-    public partial class Form1 : Form
+    public partial class HomePage : UserControl
     {
-        public Form1()
+        public HomePage()
         {
             InitializeComponent();
-            
         }
     }
 }

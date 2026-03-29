@@ -41,6 +41,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+
             // 
             // label1
             // 
@@ -52,6 +53,7 @@
             this.label1.Size = new System.Drawing.Size(52, 27);
             this.label1.TabIndex = 1;
             this.label1.Text = "首页";
+
             // 
             // MenuUC
             // 
@@ -63,6 +65,7 @@
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "MenuUC";
             this.Size = new System.Drawing.Size(240, 50);
+            this.Click += new System.EventHandler(this.MenuUC_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
