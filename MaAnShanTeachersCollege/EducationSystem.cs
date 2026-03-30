@@ -17,7 +17,8 @@ namespace MaAnShanTeachersCollege
         public EducationSystem()
         {
             InitializeComponent();
-       
+
+
 
         }
 
@@ -40,6 +41,12 @@ namespace MaAnShanTeachersCollege
             panelContent.Controls.Clear();
             SettingPage settingPage = new SettingPage();
             panelContent.Controls.Add(settingPage);
+        }
+
+        private void EducationSystem_Load(object sender, EventArgs e)
+        {
+            //加载菜单
+
         }
     }
 }

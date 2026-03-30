@@ -37,23 +37,23 @@
             // 
             this.pictureBox1.Image = global::MaAnShanTeachersCollege.Properties.Resources.home;
             this.pictureBox1.Location = new System.Drawing.Point(20, 7);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(70, 12);
+            this.label1.Location = new System.Drawing.Point(78, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 27);
             this.label1.TabIndex = 1;
             this.label1.Text = "首页";
-
             // 
             // MenuUC
             // 
@@ -65,7 +65,6 @@
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "MenuUC";
             this.Size = new System.Drawing.Size(240, 50);
-            this.Click += new System.EventHandler(this.MenuUC_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
