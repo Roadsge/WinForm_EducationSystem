@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MaAnShanTeachersCollege.UserControls
+namespace EducationSystem.UserControls
 {
     public partial class MenuUC : UserControl
     {
@@ -42,8 +42,9 @@ namespace MaAnShanTeachersCollege.UserControls
             }
 
 
-            
+
         }
+        #region MenuUC_Function
         private void MenuUC_MouseUp(object sender, MouseEventArgs e)
         {
             this.BackColor = MenuBaseColor;
@@ -60,25 +61,36 @@ namespace MaAnShanTeachersCollege.UserControls
         {
             this.BackColor = MenuBaseColor;
         }
-        public void AllControlClick(object sender,EventArgs e)
+        public void AllControlClick(object sender, EventArgs e)
         {
             LabelClick?.Invoke(sender, e);
         }
+        private void MenuUC_Click(object sender, EventArgs e)
+        {
+            LabelClick?.Invoke(sender, e);
+        }
+        #endregion
+
         //此项控制在设计界面属性中，是否显示
         [Browsable(true)]
         //此项控制在设计界面属性中，显示对应注释说明
         [Description("设置当前菜单的文字")]
-        [Category("Tet")]
         public string MenuText
         {
             set { label1.Text = value; }
             get { return label1.Text; }
         }
-
-        private void MenuUC_Click(object sender, EventArgs e)
+        //此项控制在设计界面属性中，是否显示
+        [Browsable(true)]
+        //此项控制在设计界面属性中，显示对应注释说明
+        [Description("设置当前菜单图标")]
+        public Image MenuImage
         {
-            LabelClick?.Invoke(sender, e);
+            set { pictureBox1.Image = value; }
+            get { return pictureBox1.Image; }
         }
+
+
         [Description("控件默认颜色")]
         [DefaultValue(typeof(Color), "35, 40, 45")]
         public Color MenuBaseColor

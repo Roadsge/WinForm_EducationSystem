@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MaAnShanTeachersCollege
+namespace EducationSystem
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace MaAnShanTeachersCollege
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EducationSystem());
+            Application.Run(new WinForm_EducationSystem());
         }
     }
 }

@@ -117,4 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="menuUC1.MenuImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAATdJREFUWEft
+        luERwiAMRjuKozhKN3EUR3EUR6l5QLiYBrUtnj/k3eXahpB8QFqdBoMjLMsyi53FTsVVKWNqYcxuSCZ2
+        E1PuYrWA3FPQcy7DxyBRzreiipDrdwSQJOeqUBSz6JZ7jgmQBNecp3Irfo7Di7DHo+wXIJN9Qi1+wcq9
+        F+jZLkAm+WYDLWj9CCGWa4ttApiQ5z2BLxIF+FSEPxL4XADBeU6FhPiwKLnCGCKiuLRzb5HAVrN5Ua/g
+        TUDISoRY+4Mkg6+abSut5kxHxVgFRxmwRM22FYprX1jSUaXiIA/+zHiORO0hrVjMN+dqFwggWIv3JK1Y
+        TBc6l7IxJbA3h17DHnQVwDbSYNbs+UZ0FZBeTwu+PNRkCBgCfi6g/SMUIRMQYf9aW1utBp+Lsfb56gd/
+        xjQ9AGDa+rvnJaqwAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="menuUC2.MenuImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAATdJREFUWEft
+        luERwiAMRjuKozhKN3EUR3EUR6l5QLiYBrUtnj/k3eXahpB8QFqdBoMjLMsyi53FTsVVKWNqYcxuSCZ2
+        E1PuYrWA3FPQcy7DxyBRzreiipDrdwSQJOeqUBSz6JZ7jgmQBNecp3Irfo7Di7DHo+wXIJN9Qi1+wcq9
+        F+jZLkAm+WYDLWj9CCGWa4ttApiQ5z2BLxIF+FSEPxL4XADBeU6FhPiwKLnCGCKiuLRzb5HAVrN5Ua/g
+        TUDISoRY+4Mkg6+abSut5kxHxVgFRxmwRM22FYprX1jSUaXiIA/+zHiORO0hrVjMN+dqFwggWIv3JK1Y
+        TBc6l7IxJbA3h17DHnQVwDbSYNbs+UZ0FZBeTwu+PNRkCBgCfi6g/SMUIRMQYf9aW1utBp+Lsfb56gd/
+        xjQ9AGDa+rvnJaqwAAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>

@@ -1,4 +1,4 @@
-﻿namespace MaAnShanTeachersCollege.Pages
+﻿namespace EducationSystem.Pages
 {
     partial class HomePage
     {
