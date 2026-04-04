@@ -1,4 +1,5 @@
-﻿using EducationSystem.Pages;
+﻿using EducationSystem.Models;
+using EducationSystem.Pages;
 using EducationSystem.Properties;
 using EducationSystem.UserControls;
 using System;
@@ -12,6 +13,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 
 namespace EducationSystem
 {
@@ -71,7 +73,7 @@ namespace EducationSystem
         /// <remarks>Displays a message box if the control type is not found or cannot be
         /// instantiated.</remarks>
         /// <param name="pageName">The name of the user control to load.</param>
-        public void LoadPage(string pageName)
+        public UserControl LoadPage(string pageName)
         {
             var assemly = Assembly.GetExecutingAssembly();
             string fullTypeName = $"{this.GetType().Namespace}.Pages.{pageName}";
@@ -79,17 +81,17 @@ namespace EducationSystem
             if(type==null)
             {
                 MessageBox.Show($"未找到相应控件{fullTypeName}" );
-                return;
+                return null;
             }
             var page = Activator.CreateInstance(type) as UserControl;
             if(page==null)
             {
                 MessageBox.Show("无法创建页面实例");
-                return;
+                return null;
             }
-            panelContent.Controls.Clear();
+            
             page.Dock = DockStyle.Fill;
-            panelContent.Controls.Add(page);
+            return page;
 
         }
 
@@ -98,17 +100,24 @@ namespace EducationSystem
             ////加载菜单
             string path = @"C:\Users\sky\Desktop\MyFile.txt";
             string file = File.ReadAllText(path);
-            string[] id = file.Split(',');
-            MenuUC menuUC1 = new MenuUC();
-            menuUC1.MenuText = "首页";
-            menuUC1.MenuImage = Resources.home;
-            menuUC1.LabelClick+=(newSender,newE)=>
+            List<MenuModel> listModels = JsonConvert.DeserializeObject<List<MenuModel>>(file);
+
+            foreach(MenuModel menu in listModels)
             {
-                panelContent.Controls.Clear();
-                HomePage home = new HomePage();
-                panelContent.Controls.Add(home);
+
+                MenuUC menuUC1 = new MenuUC();
+                menuUC1.MenuText = menu.MenuText;
+                menuUC1.MenuImage = GetBitmapFromResx(menu.MenuImage);
+                menuUC1.LabelClick += (newSender, newE) =>
+                {
+                    panelContent.Controls.Clear();
+                    
+                    panelContent.Controls.Add(LoadPage(menu.MenuPage));
+                };
+                flPanelMenu.Controls.Add(menuUC1);
             }
-            flPanelMenu.Controls.Add(menuUC1);
+
+            
 
         }
     }
